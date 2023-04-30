@@ -14,7 +14,9 @@ function Contact() {
         お問い合わせはGithubまで<br />
         <Link target="_blank" rel="noopener noreferrer" to={"https://github.com/maru0401/noukan"} >Github</Link><br/>
         バグや誤字脱字などはリポジトリにPRしていただけると幸いです。(PR先はDevelopブランチにしてください)<br />
-        また、そのほかの問題や、質問などがありましたらissuesでお知らせください。
+        また、そのほかの問題や、質問などがありましたらissuesでお知らせください。<br/>
+        また、TwitterのDMでも可能です。
+        <Link target="_blank" rel="noopener noreferrer" to={"https://twitter.com/MaruNougyou"} >Twitter</Link><br/>
       </Typography>
         </Paper>
       ))}

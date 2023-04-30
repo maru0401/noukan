@@ -4,5 +4,12 @@
     "title": "サービス開始のお知らせ",
     "content": "サービスを開始しました！",
     "date": "2023/05/01"
+  },
+  {
+    "id": 2,
+    "title": "Twitterはじめました！",
+    "content": "Twitterのアカウントを開設しました。\n",
+    "link":["https://twitter.com/MaruNougyou","Twitterで見る"],
+    "date": "2023/05/01"
   }
 ]
