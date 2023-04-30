@@ -28,6 +28,7 @@ const Setting = () => {
       Number(Cookies.get(`${newSelectedValue || "agriculture"}startrange`)) || 1,
       Number(Cookies.get(`${newSelectedValue || "agriculture"}endrange`)) || setting.maxquize
     ]);
+    maxsetValue(Number(Cookies.get(`${newSelectedValue || "agriculture"}max`)) || 20)
     Cookies.set("select", newSelectedValue);
   };
   const handleSliderChange = (event, newValue) => secsetValue(newValue);

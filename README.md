@@ -57,6 +57,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 必ずDevelopブランチにPRしてください。
 
-# ライセンス
+## ライセンス
 
 Copyright (c) [2023] [農業鑑定模擬試験制作project]. All Rights Reserved.
