@@ -35,7 +35,7 @@ const Home = () => {
             <Typography fontSize={isSmallScreen ? "15px" : "20px"}>
               当サービスは有志によって作られたものです。
             </Typography>
-            <Typography color={"gray"} fontSize={isSmallScreen ? "10px" : "15px"}>
+            <Typography color={"gray"} fontSize={isSmallScreen ? "13px" : "15px"}>
               ※現在食品の問題のみプレイできます(食品の問題の製作途中です)<br />画像提供＆問題の提供受付中
             </Typography>
           </div>
