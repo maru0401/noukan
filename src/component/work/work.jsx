@@ -104,7 +104,6 @@ const Work = () => {
     const quizetmp = [];
     quize[query.id].map((id, index) => {
       const check = (query.id === "agriculture" ? agriculture[String(id)] : query.id === "food" ? food[String(id)] : gardening[String(id)]);
-      console.log(check)
       if (!check?.answers?.includes(tmp[index] || "無回答")) {
         quizetmp.push(id);
       };
