@@ -11,8 +11,8 @@
 ## インストール
 
 ```bash
-git clone https://github.com/maru0401/saranou-noukan
-cd saranou-noukan
+git clone https://github.com/maru0401/noukan
+cd noukan
 npm install
 ```
 

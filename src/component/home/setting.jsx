@@ -15,7 +15,6 @@ const Setting = () => {
   const [maxvalue, maxsetValue] = useState(Number(Cookies.get(`${selectedValue || "agriculture"}max`)) || 20);
 
   const [value, setValue] = useState([Number(Cookies.get(`${selectedValue || "agriculture"}startrange`)) || 1, Number(Cookies.get(`${selectedValue || "agriculture"}endrange`)) || setting.maxquize]);
-  console.log(value)
   const [displayValue, setDisplayValue] = useState(false);
   const [checked, setChecked] = useState({
     "20change": (Cookies.get("20change") === "true") ? true : false,
