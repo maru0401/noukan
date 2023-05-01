@@ -1,7 +1,7 @@
 import { useLocation, Link } from "react-router-dom";
 import qt from "query-string";
 import agriculture from "../../helpers/quizes/agriculture.json";
-import food from "../../helpers/quizes//food.json";
+import food from "../../helpers/quizes/food.json";
 import gardening from "../../helpers/quizes/gardening.json";
 import setting from "../../helpers/setting.json";
 import { ArrowBack } from '@mui/icons-material';
@@ -438,16 +438,17 @@ const Work = () => {
                     同一問をプレイ
                   </Button>
                 </Grid>
-                {(Cookies.get("random") || "true") === "true" && <Grid item>
-                  <Button variant="contained" color="success" size={isSmallScreen ? "small" : "large"} sx={{
-                    color: "white",
-                    bgcolor: "green",
-                    fontSize: 11,
-                    marginTop: 2
-                  }} onClick={() => MissReturn()} >
-                    誤答問をプレイ
-                  </Button>
-                </Grid>}
+                {
+                  ((quize[query.id].filter((id, index) => !(query.id === "agriculture" ? agriculture[String(id)] : query.id === "food" ? food[String(id)] : gardening[String(id)])?.answers?.includes(tmp[index] || "無回答")).length !== 0) && (Cookies.get("random") || "true") === "true") && <Grid item>
+                    <Button variant="contained" color="success" size={isSmallScreen ? "small" : "large"} sx={{
+                      color: "white",
+                      bgcolor: "green",
+                      fontSize: 11,
+                      marginTop: 2
+                    }} onClick={() => MissReturn()} >
+                      誤答問をプレイ
+                    </Button>
+                  </Grid>}
                 <Grid item>
                   <Button variant="contained" color="success" size={isSmallScreen ? "small" : "large"} sx={{
                     color: "white",
